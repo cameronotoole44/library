@@ -1,0 +1,28 @@
+body {
+  background-image: url("./exterior/forest_background.png");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  background-position: center;
+  background-attachment: fixed;
+}
+
+h2 {
+  font-family: "Wonder Boy In Monster World", sans-serif;
+  text-align: center;
+  color: #ffe4c4;
+  padding: 60px;
+}
+
+#libraryBuilding {
+  position: fixed;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: 20%;
+  width: auto;
+  max-width: 80%;
+  text-align: center;
+}
+#libraryBuilding img {
+  width: 80%;
+  height: 400px;
+}

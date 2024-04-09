@@ -1,0 +1,209 @@
+/* GENERAL */
+body {
+  background-color: #aa8a66;
+  font-family: "wonder-boy-in-monster-world";
+}
+main {
+  position: relative;
+  border: 10px solid #dac0a2;
+  height: 800px;
+  width: 800px;
+}
+
+/* FLOOR - WINDOWS - TRIM */
+#flooring {
+  background-image: url("floor.png");
+  background-size: auto;
+  background-repeat: repeat;
+  height: 100%;
+  width: 100%;
+}
+#window1 {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+#window2 {
+  position: absolute;
+  top: 0;
+  right: 130px;
+}
+#rightTrim {
+  position: absolute;
+  top: 240px;
+  right: 0px;
+  z-index: 3;
+}
+#leftTrim {
+  position: absolute;
+  top: 240px;
+  left: 0px;
+  z-index: 3;
+}
+
+/* LIGHTS */
+#light1 {
+  position: absolute;
+  top: 10px;
+  right: 98px;
+  z-index: 3;
+}
+#light2 {
+  position: absolute;
+  top: 260px;
+  right: 40px;
+  z-index: 3;
+}
+#light3 {
+  position: absolute;
+  top: 260px;
+  right: 330px;
+  z-index: 3;
+}
+
+/* BOOKSHELVES */
+#bookshelfEnd {
+  position: absolute;
+  top: 0;
+  right: 300px;
+  z-index: 2;
+}
+#bookshelf1 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+}
+#bookshelf2 {
+  position: absolute;
+  top: 0;
+  left: 230px;
+}
+#mainBookshelf {
+  position: absolute;
+  top: 295px;
+  right: 100px;
+  z-index: 1;
+}
+
+/* TABLE - CHAIRS */
+#chair1 {
+  position: absolute;
+  top: 80px;
+  right: 140px;
+  z-index: 3;
+}
+#chair2 {
+  position: absolute;
+  top: 80px;
+  right: 40px;
+  z-index: 3;
+}
+#chair3 {
+  position: absolute;
+  top: 120px;
+  right: 222px;
+  z-index: 3;
+}
+#table {
+  position: absolute;
+  top: 110px;
+  right: 30px;
+  z-index: 3;
+}
+
+/* MISC */
+#ladder {
+  position: absolute;
+  top: 22px;
+  right: 444px;
+  z-index: 3;
+}
+#steps {
+  position: absolute;
+  top: 255px;
+  right: 406px;
+  z-index: 3;
+}
+#plants {
+  position: absolute;
+  top: 290px;
+  left: 10px;
+  z-index: 3;
+}
+
+/* WALLS */
+/* R */
+#rightWall1 {
+  position: absolute;
+  top: 255px;
+  right: 0px;
+  z-index: 1;
+}
+#rightWall2 {
+  position: absolute;
+  top: 255px;
+  right: 58px;
+  z-index: 1;
+}
+#rightWall3 {
+  position: absolute;
+  top: 255px;
+  right: 116px;
+  z-index: 1;
+}
+#rightWall4 {
+  position: absolute;
+  top: 255px;
+  right: 174px;
+  z-index: 1;
+}
+#rightWall5 {
+  position: absolute;
+  top: 255px;
+  right: 232px;
+  z-index: 1;
+}
+#rightWall6 {
+  position: absolute;
+  top: 255px;
+  right: 290px;
+  z-index: 1;
+}
+#rightWall7 {
+  position: absolute;
+  top: 255px;
+  right: 348px;
+  z-index: 1;
+}
+/* L */
+#leftWall1 {
+  position: absolute;
+  top: 255px;
+  left: 0px;
+  z-index: 1;
+}
+#leftWall2 {
+  position: absolute;
+  top: 255px;
+  left: 58px;
+  z-index: 1;
+}
+#leftWall3 {
+  position: absolute;
+  top: 255px;
+  left: 116px;
+  z-index: 1;
+}
+#leftWall4 {
+  position: absolute;
+  top: 255px;
+  left: 174px;
+  z-index: 1;
+}
+#leftWall5 {
+  position: absolute;
+  top: 255px;
+  left: 232px;
+  z-index: 1;
+}
