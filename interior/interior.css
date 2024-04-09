@@ -131,6 +131,18 @@ main {
   left: 10px;
   z-index: 3;
 }
+#lucky-cat {
+  position: absolute;
+  top: 250px;
+  right: 166px;
+  z-index: 3;
+}
+#rug {
+  position: absolute;
+  top: 420px;
+  left: 40px;
+  z-index: 3;
+}
 
 /* WALLS */
 /* R */
