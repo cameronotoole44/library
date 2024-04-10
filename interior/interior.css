@@ -112,6 +112,20 @@ main {
   z-index: 3;
 }
 
+/* INFO DESK */
+#infoTop {
+  position: absolute;
+  top: 500px;
+  right: 300px;
+  z-index: 1;
+}
+#infoMain {
+  position: absolute;
+  top: 619px;
+  right: 132px;
+  z-index: 2;
+}
+
 /* MISC */
 #ladder {
   position: absolute;
@@ -142,6 +156,18 @@ main {
   top: 420px;
   left: 40px;
   z-index: 3;
+}
+
+/* DOOR */
+
+#doorClosed {
+  position: absolute;
+  top: 720px;
+  right: 406px;
+  z-index: 1;
+}
+#doorClosed.open img {
+  display: none;
 }
 
 /* WALLS */
