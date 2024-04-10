@@ -85,10 +85,16 @@ main {
   right: 100px;
   z-index: 1;
 }
-#smallBookshelf {
+#smallBookshelf1 {
   position: absolute;
   top: 560px;
-  left: 60px;
+  left: 30px;
+  z-index: 3;
+}
+#smallBookshelf2 {
+  position: absolute;
+  top: 560px;
+  left: 180px;
   z-index: 3;
 }
 
@@ -163,6 +169,10 @@ main {
   right: 444px;
   z-index: 3;
 }
+#ladderImg {
+  transition: transform 0.3s ease;
+}
+
 #steps {
   position: absolute;
   top: 255px;

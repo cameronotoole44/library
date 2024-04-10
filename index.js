@@ -6,26 +6,71 @@
 // third page is the actual interactive library
 
 
+// function openDoor() {
+//     document.getElementById("doorImageClosed").style.display = "none";
+//     document.getElementById("doorImageOpen").style.display = "block";
+// }
+
+// function closeDoor() {
+//     document.getElementById("doorImageClosed").style.display = "block";
+//     document.getElementById("doorImageOpen").style.display = "none";
+// }
+// function navigateToPage() {
+//     function navigateToPage() {
+//         var doorClosed = document.getElementById("doorImageClosed");
+//         var doorOpen = document.getElementById("doorImageOpen");
+
+//         if (doorClosed && doorOpen) {
+//             doorClosed.style.display = "none";
+//             doorOpen.style.display = "block";
+//         } else {
+//             console.error("Cannot find door elements in the DOM.");
+//         }
+//     }
+//     window.location.href = "../index.html";
+// }
+
+// const ladder = document.getElementById('ladderImg');
+
+// ladder.addEventListener('mousemove', (e) => {
+//     const rect = ladder.getBoundingClientRect();
+//     const dx = e.clientX - rect.left - rect.width / 2;
+//     ladder.style.setProperty('--ladder-translate-x', `${dx}px`);
+// });
+
+
 function openDoor() {
-    document.getElementById("doorImageClosed").style.display = "none";
-    document.getElementById("doorImageOpen").style.display = "block";
+    var doorClosed = document.getElementById('doorImageClosed');
+    var doorOpen = document.getElementById('doorImageOpen');
+
+    if (doorClosed && doorOpen) {
+        doorClosed.style.display = 'none';
+        doorOpen.style.display = 'block';
+    } else {
+        console.error('Cannot find door elements in the DOM.');
+    }
 }
 
 function closeDoor() {
-    document.getElementById("doorImageClosed").style.display = "block";
-    document.getElementById("doorImageOpen").style.display = "none";
-}
-function navigateToPage() {
-    function navigateToPage() {
-        var doorClosed = document.getElementById("doorImageClosed");
-        var doorOpen = document.getElementById("doorImageOpen");
+    var doorClosed = document.getElementById('doorImageClosed');
+    var doorOpen = document.getElementById('doorImageOpen');
 
-        if (doorClosed && doorOpen) {
-            doorClosed.style.display = "none";
-            doorOpen.style.display = "block";
-        } else {
-            console.error("Cannot find door elements in the DOM.");
-        }
+    if (doorClosed && doorOpen) {
+        doorClosed.style.display = 'block';
+        doorOpen.style.display = 'none';
+    } else {
+        console.error('Cannot find door elements in the DOM.');
     }
-    window.location.href = "../index.html";
 }
+
+function navigateToPage() {
+    window.location.href = '../index.html';
+}
+
+const ladder = document.getElementById('ladderImg');
+
+ladder.addEventListener('mousemove', (e) => {
+    const rect = ladder.getBoundingClientRect();
+    const dx = e.clientX - rect.left - rect.width / 2;
+    ladder.style.transform = `translateX(${dx}px)`;
+});
