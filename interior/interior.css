@@ -85,6 +85,12 @@ main {
   right: 100px;
   z-index: 1;
 }
+#smallBookshelf {
+  position: absolute;
+  top: 560px;
+  left: 60px;
+  z-index: 3;
+}
 
 /* TABLE - CHAIRS */
 #chair1 {
@@ -123,6 +129,30 @@ main {
   position: absolute;
   top: 619px;
   right: 132px;
+  z-index: 2;
+}
+#pc {
+  position: absolute;
+  top: 590px;
+  right: 160px;
+  z-index: 2;
+}
+#book {
+  position: absolute;
+  top: 544px;
+  right: 313px;
+  z-index: 2;
+}
+#coffee {
+  position: absolute;
+  top: 560px;
+  right: 40px;
+  z-index: 2;
+}
+#infoSign {
+  position: absolute;
+  top: 600px;
+  right: 254px;
   z-index: 2;
 }
 
