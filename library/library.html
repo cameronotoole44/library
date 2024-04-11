@@ -1,0 +1,73 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Library</title>
+    <link rel="stylesheet" href="../library/library.css">
+
+
+</head>
+
+<body>
+    <div class='theContainer'>
+        <div class='content'>
+            <!-- library to house the cards -->
+            <div class='library '>
+                <div class='bookCards addIcon'>
+                    <img type="image" class='formButton' id='plus' style='width: 70px;' src='images/addPlus.svg'>
+                </div>
+
+            </div>
+
+            <div class='bookStats'>
+                <div class='divider'>
+                    <input type='image' class='bookIcons' src='images/bookIcon.svg'>
+                    <span id='totalBooks'></span>
+
+                </div>
+                <div class='divider'>
+                    <input type='image' class='bookIcons' src='images/pages.svg'>
+                    <span id='totalPages'></span>
+                </div>
+                <div class='divider'>
+                    <input type='image' class='bookIcons' src='images/totalRead.svg'>
+                    <span id='totalRead'></span>
+                </div>
+
+            </div>
+        </div>
+
+
+
+
+        <!-- modal form popup -->
+        <div class='form'>
+            <form autocomplete="off">
+                <div class='formTop'>
+                    <span>Add A Book</span>
+                    <span><img class="close" src='images/cancel2.svg' alt='cancel'></span>
+                </div>
+                <div class='textbox'>
+                    <input type='text' class='textBoxForm' placeholder="title" id='title'>
+                    <input type='text' class='textBoxForm' placeholder="author" id='author'>
+                    <input type='number' class='textBoxForm' placeholder="page" id='page'>
+                </div>
+
+                <div class='readCheckBox'>
+                    <label class='label' for='readOrNot'>
+                        <input type='checkbox' id='readOrNot'>
+                        <span class='checkmark'></span>
+                        <span id='spanText'><em>I read the book!</em></span>
+
+                    </label>
+
+                </div>
+                <input type='button' id='submitBookInfo' value='add book to library'>
+            </form>
+        </div>
+
+        <script src="script.js"></script>
+</body>
+
+</html>
