@@ -7,6 +7,7 @@ body {
 }
 
 h2 {
+  font-size: 60px;
   font-family: "Wonder Boy In Monster World", sans-serif;
   text-align: center;
   color: #ffe4c4;
@@ -26,3 +27,49 @@ h2 {
   width: 80%;
   height: 400px;
 }
+
+#treebeard {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100px;
+  height: 100px;
+  background-image: url("Ent_Idle_1.png");
+  /* background-repeat: no-repeat; */
+  background-size: contain;
+  transition: all 0.2s ease-in-out;
+}
+
+/* @keyframes idle-animation {
+  0%,
+  100% {
+    background-image: url("Ent_Idle_1.png");
+  }
+  25% {
+    background-image: url("Ent_Idle_2.png");
+  }
+  50% {
+    background-image: url("Ent_Idle_3.png");
+  }
+  75% {
+    background-image: url("Ent_Idle_4.png");
+  }
+}
+
+@keyframes walk-animation {
+  0% {
+    background-image: url("Ent_Walk_1.png");
+  }
+  25% {
+    background-image: url("Ent_Walk_2.png");
+  }
+  50% {
+    background-image: url("Ent_Walk_3.png");
+  }
+  75% {
+    background-image: url("Ent_Walk_4.png");
+  }
+  100% {
+    background-image: url("Ent_Walk_1.png");
+  }
+} */
