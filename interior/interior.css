@@ -10,6 +10,29 @@ main {
   width: 800px;
 }
 
+/* MUSHROOMS */
+#mush1 {
+  position: absolute;
+  top: 100px;
+  right: 444px;
+  z-index: 2;
+}
+#mush2 {
+  position: absolute;
+  top: 100px;
+  right: 450px;
+  z-index: 2;
+}
+.speechBubble {
+  background-color: #fff;
+  color: #000;
+  position: absolute;
+  top: 100px;
+  right: 420px;
+  display: none;
+  z-index: 2;
+}
+
 /* FLOOR - WINDOWS - TRIM */
 #flooring {
   background-image: url("floor.png");

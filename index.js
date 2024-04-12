@@ -1,9 +1,12 @@
-// home page outside of library- grass, stone, pathway(?)
-// user clicks building to enter
-// new layout is inside the library bookshelves, fireplace, chairs, tables, etc
-// MAYBE user moves character (keep it simple for mobile in mind) to bookshelf
-// user clicks on bookshelf to open their personal library
-// third page is the actual interactive library
+
+// user clicks building to enter //
+// new layout is inside the library bookshelves, coffee, chairs, table, etc.
+// user clicks on computer to open their personal library
+// third page is the actual interactive library to add, remove books etc.
+// exit computer button ! !! ! !! !
+// user can click on lucky cat for a random fortune 
+// user clicks door to exit to outside of library
+
 
 
 
@@ -32,10 +35,38 @@ function closeDoor() {
 function navigateToPage() {
     window.location.href = '../index.html';
 }
-// LADDER MOVEMENT //
+// LADDER **** MOVEMENT //
+const speechBubble1 = document.getElementById('speechBubble1');
+const speechBubble2 = document.getElementById('speechBubble2');
+const mush1 = document.getElementById('mush1');
+const mush2 = document.getElementById('mush2');
 const ladder = document.getElementById('ladderImg');
+
 ladder.addEventListener('mousemove', (e) => {
     const rect = ladder.getBoundingClientRect();
     const dx = e.clientX - rect.left - rect.width / 2;
     ladder.style.transform = `translateX(${dx}px)`;
+
+    // Toggle between showing speech bubbles and mushrooms based on ladder movement
+    if (dx > 0) {
+        // Moving right
+        speechBubble1.style.display = 'block';
+        speechBubble2.style.display = 'none';
+        mush1.style.display = 'none';
+        mush2.style.display = 'block';
+    } else {
+        // Moving left
+        speechBubble1.style.display = 'none';
+        speechBubble2.style.display = 'block';
+        mush1.style.display = 'block';
+        mush2.style.display = 'none';
+    }
 });
+
+// ladder.addEventListener('mousemove', (e) => {
+//     const rect = ladder.getBoundingClientRect();
+//     const dx = e.clientX - rect.left - rect.width / 2;
+//     ladder.style.transform = `translateX(${dx}px)`;
+// });
+
+
