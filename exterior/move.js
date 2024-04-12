@@ -28,7 +28,7 @@ const path = [
 ];
 
 let imageIndex = 0;
-const walkingImages = ['Ent_walk_1.png', 'Ent_walk_2.png', 'Ent_walk_3.png', 'Ent_walk_4.png'];
+const walkingImages = ['./exterior/Ent_walk_1.png', './exterior/Ent_walk_2.png', './exterior/Ent_walk_3.png', './exterior/Ent_walk_4.png'];
 
 function animateTreebeard() {
     let index = 0;
@@ -39,8 +39,10 @@ function animateTreebeard() {
         }
         index += direction;
         const currentPos = path[index];
-        treebeard.style.left = `${currentPos.x}px`;
-        treebeard.style.top = `${currentPos.y}px`;
+        if (currentPos) {
+            treebeard.style.left = `${currentPos.x}px`;
+            treebeard.style.top = `${currentPos.y}px`;
+        }
         updateWalkingImage();
     }, 220); // speed
 }

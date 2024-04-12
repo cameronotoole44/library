@@ -42,7 +42,7 @@ h2 {
   position: absolute;
   width: 100px;
   height: 100px;
-  background-image: url("Ent_Idle_1.png");
+  background-image: url("exterior/Ent_Idle_1.png");
   /* background-repeat: no-repeat; */
   background-size: contain;
   transition: all 0.2s ease-in-out;
