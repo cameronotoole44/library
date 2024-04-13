@@ -4,13 +4,21 @@
 }
 
 body {
-  background: #777777;
-  background: linear-gradient(to right, #444444, #0a1553);
+  background: #000;
+  /* background: linear-gradient(to right, #444444, #000); */
   text-rendering: optimizeLegibility;
-  font-family: "Norse", sans-serif;
+  font-family: "Onesize", sans-serif;
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+#exit {
+  position: fixed;
+  top: right;
+  right: 20px;
+  width: 10px;
+  height: 10px;
 }
 
 .theContainer {
@@ -19,10 +27,9 @@ body {
   width: 95vw;
   border-radius: 20px;
   padding: 10px;
-  box-shadow: 1px 1px 10px 1px #9493cc8f,
-    inset 0 0 1px 3px rgba(253, 243, 243, 0.281),
-    inset 0px 0px 30px 1px rgba(250, 250, 250, 0.774);
-  background: linear-gradient(to right, #ffffff44, #c4c3ffc9);
+  box-shadow: 1px 1px 10px 1px #0000008f, inset 0 0 1px 3px #fdf3f348,
+    inset 0px 0px 20px 1px #00ff6ed8;
+  background: linear-gradient(to right, #00000044, #000000c9);
 }
 
 .content {
@@ -45,20 +52,20 @@ body {
 }
 
 ::-webkit-scrollbar-thumb {
-  background: #9da6f3;
+  background: #00ff6f;
   width: 15px;
   border-radius: 10px;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background-color: #7f88d6;
+  background-color: #00ff6f;
 }
 
-/* sign up information */
+/* SIGN UP INFO */
 .form {
   display: none;
-  background-color: white;
-  box-shadow: 4px 4px 1px 4px #b8bcf5ea, inset 1px 1px 1px 1px #9c9afb;
+  background-color: #000;
+  box-shadow: 4px 4px 1px 4px #474747ea, inset 1px 1px 1px 1px #52f89a;
   border-radius: 30px;
   padding: 20px;
   height: 300px;
@@ -69,20 +76,17 @@ body {
   transform: translate(-50%, -50%);
   opacity: 0;
 }
-
 .fadeIn {
   display: block;
   animation-name: fadeIn;
   animation-duration: 200ms;
   animation-fill-mode: forwards;
 }
-
 .fadeOut {
   display: block;
   animation-name: fadeOut;
   animation-duration: 200ms;
 }
-
 @keyframes fadeOut {
   0% {
     opacity: 1;
@@ -103,8 +107,8 @@ body {
 .textBoxForm {
   padding: 10px;
   outline: none;
-  border: 1px solid rgb(238, 235, 235);
-  box-shadow: 0px 0px 5px 1px rgb(236, 231, 231);
+  border: 1px solid #00ff6f;
+  box-shadow: 0px 0px 5px 1px #00ff6f;
   width: 250px;
   margin-bottom: 20px;
   border-radius: 20px;
@@ -122,17 +126,17 @@ body {
   position: absolute;
   height: 25px;
   width: 25px;
-  background-color: white;
-  border: 1px solid rgb(199, 196, 196);
+  background-color: #000;
+  border: 1px solid #00ff6f;
   border-radius: 100%;
 }
 
 .readCheckBox:hover input ~ .checkmark {
-  background-color: #a59eff;
+  background-color: #00ff6f;
 }
 
 .readCheckBox input:checked ~ .checkmark {
-  background: linear-gradient(to right, #94a7fa, #a5b8f5);
+  background: linear-gradient(to right, #00ff6f, #35fc8b);
 }
 .checkmark:after {
   content: "";
@@ -148,7 +152,7 @@ body {
   top: 5px;
   width: 5px;
   height: 10px;
-  border: solid white;
+  border: solid #00ff6f;
   border-width: 0 3px 3px 0;
   -webkit-transform: rotate(45deg);
   -ms-transform: rotate(45deg);
@@ -162,22 +166,15 @@ body {
 
 #submitBookInfo {
   margin-top: 30px;
-  background: linear-gradient(to right, #9ea0ff, #c3ccff);
+  background: linear-gradient(to right, #00ff6f, #86f8b8);
   border: none;
   font-weight: 600;
   padding: 12px;
   border-radius: 20px;
-  box-shadow: 0px 0px 20px 1px #cad6f6;
+  box-shadow: 0px 0px 20px 1px #00ff6f;
   outline: none;
   text-align: center;
   width: 250px;
-}
-
-#submitBookInfo:hover {
-  background: linear-gradient(to right, #828afc, #8d98fa);
-}
-#submitBookInfo:active {
-  background: linear-gradient(to right, #c3d1ff, #b3baf6);
 }
 
 .formTop {
@@ -215,8 +212,8 @@ input[type="button"] {
   min-height: 200px;
   flex: 0 1;
   flex-flow: column wrap;
-  box-shadow: 3px 3px 1px 1px #9e9df398;
-  background-color: rgb(255, 255, 255);
+  box-shadow: 3px 3px 1px 1px #00ff6e9a;
+  background-color: #000;
   border-radius: 10px;
   justify-content: space-between;
 }
@@ -260,7 +257,7 @@ input[type="button"] {
 }
 
 .line {
-  background: linear-gradient(to right, #aeaffa, #b3bdf6);
+  background: linear-gradient(to right, #00ff6f, #32ff8b);
   margin: 15px;
 
   height: 3px;
@@ -273,6 +270,8 @@ input[type="button"] {
   display: flex;
   bottom: 5;
   right: 5;
+  width: 20px;
+  height: 20px;
 }
 
 /* prevent user from selecting text */
@@ -307,36 +306,36 @@ input[type="button"] {
 }
 
 .icons {
-  background-color: #7577f6;
+  background-color: #9ef8c5;
   margin: 3px;
   border-radius: 100%;
   padding: 5px;
   width: 35px;
   outline: none;
-  box-shadow: 1px 1px 5px 1px #b4b0af;
+  box-shadow: 1px 1px 5px 1px #9ef8c5;
 }
 
 .edit {
-  background-color: #8daafa;
+  background-color: #1b1b1b;
 }
 
 .readYes {
-  background-color: rgb(26, 153, 26);
+  background-color: #58a058;
 }
 
 .readNo {
-  background-color: red;
+  background-color: #1b1b1b;
 }
 
 .delete {
-  background-color: red;
+  background-color: #1b1b1b;
 }
 
 .delete:active {
-  background-color: red;
+  background-color: #1b1b1b;
 }
 
-/* book Stats */
+/* stats */
 .bookStats {
   margin-top: 50px;
   margin-bottom: 10px;
@@ -346,10 +345,11 @@ input[type="button"] {
   height: 55px;
   border-radius: 30px;
   padding: 5px;
-  /* font-family: monospace; */
   font-size: 0.9em;
-  background-color: rgb(255, 255, 255);
-  box-shadow: 3px 3px 1px 1px #9dadf398;
+  font-family: "Onesize", sans-serif;
+  color: #00ff6f;
+  background-color: #000;
+  box-shadow: 3px 3px 1px 1px #00ff6e9d;
   justify-content: center;
 }
 
