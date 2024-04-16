@@ -26,8 +26,6 @@ body {
   width: 95vw;
   border-radius: 20px;
   padding: 10px;
-  /* box-shadow: 1px 1px 10px 1px #0000008f, inset 0 0 1px 3px #fdf3f348,
-    inset 0px 0px 20px 1px #00ff6ed8; */
   background: linear-gradient(to right, #00000044, #000000c9);
 }
 
@@ -200,11 +198,11 @@ input[type="button"] {
 .bookCards {
   display: flex;
   position: relative;
-  min-width: 190px;
-  min-height: 200px;
+  min-width: 400px;
+  min-height: 400px;
   flex: 0 1;
   flex-flow: column wrap;
-  box-shadow: 3px 3px 1px 1px #00ff6e9a;
+  box-shadow: 0px 0px 4px 4px #00ff6e9a;
   background-color: #000;
   border-radius: 10px;
   justify-content: space-between;
